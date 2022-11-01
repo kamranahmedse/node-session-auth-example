@@ -14,7 +14,7 @@ app.use(sessions({
     maxAge: 1000 * 60 * 60 * 24 // 24 hours
   },
   resave: true,
-  saveUninitialized: true,
+  saveUninitialized: false,
 }));
 
 app.use(express.json());
